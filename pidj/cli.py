@@ -3,13 +3,13 @@ import sys
 
 import click
 
+import pidj.pidj as pi_dj
+
 
 @click.command()
 def main():
     """Console script for pidj."""
-    click.echo("Replace this message by putting your code into "
-               "pidj.cli.main")
-    click.echo("See click documentation at https://click.palletsprojects.com/")
+    pi_dj.main()
     return 0
 
 

@@ -24,8 +24,10 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "*"
+python = ">=3.6,<4.0"
 click = "*"
+spotify = "^0.10.2"
+Flask = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
 bumpversion = "*"
@@ -37,9 +39,11 @@ pylint = "*"
 pytest = "*"
 sphinx = "*"
 tox = "*"
-yapf = "*"
+yapf = "0.28.*"
 mypy = "*"
 types-requests = "*"
+importlib-metadata = "^4.6.4"
+typed-ast = "^1.4.3"
 
 [tool.poetry.scripts]
 pidj = 'pidj.cli:main'
