@@ -13,10 +13,10 @@ classifiers=[
     'License :: OSI Approved :: MIT License',
     'Natural Language :: English',
     'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.5',
     'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
 ]
 packages = [
     { include = "pidj" },
@@ -25,9 +25,10 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.6,<4.0"
+Flask = "*"
+spotify = "*"
+environs = "*"
 click = "*"
-spotify = "^0.10.2"
-Flask = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
 bumpversion = "*"
@@ -42,8 +43,8 @@ tox = "*"
 yapf = "0.28.*"
 mypy = "*"
 types-requests = "*"
-importlib-metadata = "^4.6.4"
-typed-ast = "^1.4.3"
+importlib-metadata = "*"
+typed-ast = "*"
 
 [tool.poetry.scripts]
 pidj = 'pidj.cli:main'
